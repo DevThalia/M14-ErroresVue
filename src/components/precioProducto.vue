@@ -18,7 +18,7 @@ const productos = ref([
 const minPrecio = ref('')
 
 const listaFiltrada = computed (()=>
-    productos.value.filter(producto=>producto.precio>minPrecio.value)
+    productos.value.filter(producto=>producto.precio>=minPrecio.value)
 );
 
 </script>
